@@ -2,24 +2,23 @@
     min-height: 470px
     padding: 70px 0 78px 0
     background-color: #f6f6f6
-    @include title
     &__wrapper
         display: flex
         justify-content: space-between
-        align-items: center
     &__item
-        width: 239px
         display: flex
         flex-direction: column
-        justify-content: center
         align-items: center
         text-align: center
+        margin-top: 65px
     &__img
         width: 70px
         img
             width: 100%
-    &__subtitle
+    &__descr
+        width: 247px
         margin-top: 38px
+    &__subtitle
         font-size: 18px
         line-height: 18px
         font-weight: 700
@@ -30,3 +29,8 @@
         line-height: 14px
         font-weight: 300
         color: #0d0d0d
+        a
+            text-decoration: underline
+            color: #ff0000
+            &:hover
+                color: #ff0000
