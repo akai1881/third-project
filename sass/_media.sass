@@ -1,6 +1,8 @@
 @media (max-width: 1199.98px)
 	.container
 		max-width: 850px
+	.promo
+		background: url(../img/promo_bg.jpg) 23% center/cover no-repeat
 	.benefits
 		&__wrapper
 			flex-wrap: no-wrap
@@ -20,6 +22,7 @@
 		&_main
 			width: 290px
 	.promo
+		background: url(../img/promo_bg.jpg) 25% center/cover no-repeat
 		&__wrapper
 			margin-top: 80px
 		&__header
@@ -65,12 +68,14 @@
 				width: 250px
 				height: 40px
 	.promo
+		background: url(../img/promo_bg.jpg) 32% center/cover no-repeat
+		padding: 20px 0 47px 0
 		&__header
 			font-size: 35px
-    		line-height: 35px
+			line-height: 35px
 		&__subheader
 			font-size: 19px
-    		margin-top: 8px
+			margin-top: 8px
 			line-height: 19px
 		&__wrapper
 			margin-top: 50px
@@ -86,12 +91,59 @@
 		&__text
 			margin-top: 15px
 @media (max-width: 575.98px) 
+	.container
+		width: 100%
+		padding-right: 15px
+		padding-left: 15px
+		margin-right: auto
+		margin-left: auto
 	.header
+		justify-content: space-between
+		.button
+			font-size: 11px
+			width: 120px
+			height: 30px
+		&__logo
+			max-width: 50%
+    		flex: 0 0 50%
 		&__contacts
-			flex: normal
-			padding: none
+			flex: 0 1 auto
+			padding: 0
 		&__official
 			display: none
-
-
-	
+	.promo
+		min-height: 355px
+		background: url(../img/promo_bg.jpg) 25%/cover no-repeat
+		padding: 15px 0 35px 0
+		.button
+			&_main
+				margin-top: 30px
+				width: 220px
+				font-size: 14px
+		&__header
+			font-size: 30px
+			line-height: 32px
+			text-align: center
+			padding: 0 20px
+		&__subheader
+			font-size: 19px
+			margin-top: 6px
+			line-height: 19px
+			padding: 0 20px
+			text-align: center
+		&__link
+			font-size: 14px
+		&__icons
+			display: none
+	.benefits
+		padding: 40px 0 50px 0
+		&__row
+			padding: 0 29px
+		&__title
+			font-size: 21px
+			line-height: 21px
+			margin-bottom: 55px
+		&__text
+			text-align: justify
+			br
+				display: none
