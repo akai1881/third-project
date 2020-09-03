@@ -1,0 +1,272 @@
+@media (max-width: 1199.98px) {
+	.container {
+		max-width: 850px;
+	}
+	.promo {
+		background: url(../img/promo_bg.jpg) 23% center/cover no-repeat;
+	}
+	.benefits {
+		&__wrapper {
+			flex-wrap: no-wrap;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.container {
+		max-width: 720px;
+	}
+	.header {
+		&__official {
+			span {
+				font-size: 17px;
+			}
+		}
+		&__phone {
+			font-size: 17px;
+		}
+	}
+	.button {
+		width: 143px;
+		&_main {
+			width: 290px;
+		}
+	}
+	.promo {
+		background: url(../img/promo_bg.jpg) 25% center/cover no-repeat;
+		&__wrapper {
+			margin-top: 80px;
+		}
+		&__header {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		&__subheader {
+			font-size: 21px;
+			margin-top: 10px;
+		}
+		&__icons {
+			margin-top: 50px;
+		}
+		&__link {
+			font-size: 15px;
+		}
+	}
+	.benefits {
+		.title {
+			font-size: 28px;
+			line-height: 28px;
+		}
+		&__wrapper {
+			flex-wrap: wrap;
+			margin: 0;
+		}
+		&__row {
+			flex-basis: 50%;
+			justify-content: center;
+			&:nth-child(n+3) {
+				margin-top: 60px;
+			}
+		}
+		&__descr {
+			margin-top: 35px;
+		}
+		&__text {
+			margin-top: 23px;
+		}
+	}
+	.consult {
+		.title {
+			&_left {
+				font-size: 32px;
+			}
+		}
+		&__descr {
+			margin-top: 65px;
+		}
+		.feed-form {
+			.button {
+				&_submit {
+					width: 300px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767.98px ) {
+	.container {
+		max-width: 540px;
+	}
+	.header {
+		flex-wrap: wrap;
+		&__phone {
+			display: none;
+		}
+		&__contacts {
+			align-items: center;
+			flex: 1 1 100%;
+			padding-top: 50px;
+			.button {
+				font-size: 16px;
+				width: 250px;
+				height: 40px;
+			}
+		}
+	}
+	.promo {
+		background: url(../img/promo_bg.jpg) 32% center/cover no-repeat;
+		padding: 20px 0 47px 0;
+		&__header {
+			font-size: 35px;
+			line-height: 35px;
+		}
+		&__subheader {
+			font-size: 19px;
+			margin-top: 8px;
+			line-height: 19px;
+		}
+		&__wrapper {
+			margin-top: 50px;
+			align-items: center;
+		}
+		.button {
+			&_main {
+				margin-top: 60px;
+			}
+		}
+	}
+	.benefits {
+		&__row {
+			flex-basis: 100%;
+			&:nth-child(n+2) {
+				margin-top: 60px;
+			}
+		}
+		&__text {
+			margin-top: 15px;
+		}
+	}
+	.consult {
+		.title {
+			&_left {
+				font-size: 25px;
+				text-align: center;
+			}
+		}
+		&__descr {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.feed-form {
+			align-items: center;
+			.button {
+				&_submit {
+					width: 300px;
+				}
+			}
+		}
+		.title {
+			&_left {
+				font-size: 20px;
+			}
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header {
+		justify-content: space-between;
+		.button {
+			font-size: 11px;
+			width: 120px;
+			height: 30px;
+		}
+		&__logo {
+			max-width: 50%;
+			flex: 0 0 50%;
+		}
+		&__contacts {
+			flex: 0 1 auto;
+			padding: 0;
+		}
+		&__official {
+			display: none;
+		}
+	}
+	.promo {
+		min-height: 355px;
+		background: url(../img/promo_bg.jpg) 25% center/cover no-repeat;
+		padding: 15px 0 35px 0;
+		.button {
+			&_main {
+				margin-top: 30px;
+				width: 220px;
+				font-size: 14px;
+			}
+		}
+		&__header {
+			font-size: 30px;
+			line-height: 32px;
+			text-align: center;
+			padding: 0 20px;
+		}
+		&__subheader {
+			font-size: 19px;
+			margin-top: 6px;
+			line-height: 19px;
+			padding: 0 20px;
+			text-align: center;
+		}
+		&__link {
+			font-size: 14px;
+		}
+		&__icons {
+			display: none;
+		}
+	}
+	.benefits {
+		padding: 40px 0 50px 0;
+		&__row {
+			padding: 0 29px;
+		}
+		.title {
+			font-size: 21px;
+			line-height: 21px;
+			margin-bottom: 55px;
+		}
+		&__text {
+			text-align: justify;
+			br {
+				display: none;
+			}
+		}
+	}
+	.consult {
+		min-height: 450px;
+		background: url('../../img/second_bg.jpg') 60% center/cover no-repeat;
+		padding: 50px 0;
+		.title {
+			&_left {
+				margin-bottom: 0px;
+				font-size: 20px;
+			}
+		}
+		&__descr {
+			text-align: left;
+			font-size: 18px;
+			margin: 25px auto 0 auto;
+			max-width: 300px;
+		}
+		.xs-visible {
+			display: inline;
+		}
+		.feed-form {
+			margin-top: 30px;
+		}
+	}
+}
