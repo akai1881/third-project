@@ -6,8 +6,6 @@
 	.benefits
 		&__wrapper
 			flex-wrap: no-wrap
-		&__item
-			// width: 237px
 @media (max-width: 991.98px)
 	.container
 		max-width: 720px
@@ -36,7 +34,7 @@
 		&__link
 			font-size: 15px
 	.benefits
-		&__title
+		.title
 			font-size: 28px
 			line-height: 28px
 		&__wrapper
@@ -45,13 +43,22 @@
 		&__row
 			flex-basis: 50%
 			justify-content: center
-			// padding: 0 2px
 			&:nth-child(n+3)
 				margin-top: 60px
 		&__descr
 			margin-top: 35px
 		&__text
 			margin-top: 23px
+	.consult
+		.title
+			&_left
+				font-size: 32px
+		&__descr
+			margin-top: 65px
+		.feed-form
+			.button
+				&_submit
+					width: 300px
 @media (max-width: 767.98px )
 	.container
 		max-width: 540px
@@ -90,6 +97,22 @@
             	margin-top: 60px
 		&__text
 			margin-top: 15px
+	.consult
+		.title
+			&_left
+				font-size: 25px
+				text-align: center
+		&__descr
+			text-align: center
+			margin-top: 50px
+		.feed-form
+			align-items: center
+			.button
+				&_submit
+					width: 300px
+		.title
+			&_left
+				font-size: 20px
 @media (max-width: 575.98px) 
 	.container
 		width: 100%
@@ -113,7 +136,7 @@
 			display: none
 	.promo
 		min-height: 355px
-		background: url(../img/promo_bg.jpg) 25%/cover no-repeat
+		background: url(../img/promo_bg.jpg) 25% center/cover no-repeat
 		padding: 15px 0 35px 0
 		.button
 			&_main
@@ -139,7 +162,7 @@
 		padding: 40px 0 50px 0
 		&__row
 			padding: 0 29px
-		&__title
+		.title
 			font-size: 21px
 			line-height: 21px
 			margin-bottom: 55px
@@ -147,3 +170,20 @@
 			text-align: justify
 			br
 				display: none
+	.consult
+		min-height: 450px
+		background: url('../../img/second_bg.jpg') 60% center/cover no-repeat
+		padding: 50px 0
+		.title
+			&_left
+				margin-bottom: 0px
+				font-size: 20px
+		&__descr
+			text-align: left
+			font-size: 18px
+			margin: 25px auto 0 auto
+			max-width: 300px
+		.xs-visible
+			display: inline
+		.feed-form
+			margin-top: 30px
