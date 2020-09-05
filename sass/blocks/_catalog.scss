@@ -1,0 +1,36 @@
+.catalog {
+    padding: 108px 0 103px 0;
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+    &__option {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        transform: skew(-20deg);
+        padding: 16px 0;    
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            position: absolute;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #6b6b6b;
+            transform: skew(20deg);
+        }
+        &_1 {
+            background-color: $main-color;
+            border: none;
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+}
+     
