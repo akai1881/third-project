@@ -1,8 +1,9 @@
 .catalog {
-    padding: 108px 0 103px 0;
+    padding: 0 0 103px 0;    
     &__row {
         display: flex;
         justify-content: center;
+        margin-bottom: 59px;
     }
     &__option {
         position: relative;
@@ -31,6 +32,78 @@
                 color: #ffffff;
             }
         }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between ;
+        flex-wrap: wrap;
+        min-height: 900px;
+    }
+    &__item {
+        width: 300px;
+        height: 440px;
+        border: 2px solid #e8e8e8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 19px 19px 25px 19px;
+
+    }
+    &__img {
+        width: 140px;
+        margin-bottom: 19px;
+        img {
+            width: 100%;
+        }
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #0d0d0d;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        line-height: 14px;
+        color: $main-color;
+        margin-bottom: 17px;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__divider {
+        margin-bottom: 13px;
+        height: 1px;
+        width: 100%;
+        background-color: #e8e8e8;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+    }
+    &__ex-price {
+        font-size: 14px;
+        position: relative;
+        font-weight: 300;
+        text-decoration: line-through;
+        color: #555555;
+    }
+    &__sale-price {
+        font-size: 20px;
+        font-weight: 700;
+        color: #050505;
     }
 }
      

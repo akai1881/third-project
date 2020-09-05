@@ -1,0 +1,20 @@
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+    &_left {
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: left;
+    }
+    &_catalog {
+        font-size: 16px;
+        margin-bottom: 14px;
+        line-height: 16px;
+    }
+}
