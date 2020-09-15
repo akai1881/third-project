@@ -54,7 +54,8 @@
 	}
 	.button {
 		width: 143px;
-		&_main {
+		&_main,
+		&_submit {
 			width: 290px;
 		}
 	}
@@ -247,6 +248,12 @@
 			padding-right: 0;
 		}
 	}
+	.modal {
+		&__close {
+			right: 10px;
+			top: 10px;
+		}
+	}
 }
 @media (max-width: 575.98px) {
 	.container {
@@ -399,6 +406,11 @@
 	.footer {
 		&__map {
 			height: 400px;
+		}
+	}
+	.modal {
+		&__close {
+			right: 40px;
 		}
 	}
 }

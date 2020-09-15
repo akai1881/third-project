@@ -51,4 +51,17 @@ $(document).ready(function () {
 
 	toggleSlide(".catalog-item__link");
 	toggleSlide(".catalog-item__link_back");
+
+	$("[data-modal=consultation").on("click", function () {
+		$(".overlay, #consulting").fadeIn("slow");
+	});
+	$(".modal__close").on("click", function () {
+		$(".overlay, #consulting, #thanks, #order").fadeOut("slow");
+	});
+	$(".button_buy").each(function (i) {
+		$(this).on("click", function () {
+			$("#order .modal__descr").text($(".catalog-item__subtitle").eq(i).text());
+			$(".overlay, #order").fadeIn("slow");
+		});
+	});
 });
