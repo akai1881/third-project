@@ -42,6 +42,18 @@
 	&_mini {
 		min-height: 140px;
 	}
+	.error {
+		border: 1px solid red;
+	}
+	label.error {
+		text-align: center;
+		border: none;
+		width: 20px;
+		height: 20px;
+		background: url("../icons/alert_1.svg") 20px 20px;
+		background-color: #fff;
+		// margin-bottom: 15px;
+	}
 }
 
 #order,

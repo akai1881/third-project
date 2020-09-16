@@ -34,6 +34,7 @@ $(document).ready(function () {
 				.addClass("catalog__content_active");
 		}
 	);
+
 	$(document).on("click", "div.carousel__nav .dot", function () {
 		$(this).addClass("dot_active").siblings().removeClass("dot_active");
 	});
@@ -64,4 +65,25 @@ $(document).ready(function () {
 			$(".overlay, #order").fadeIn("slow");
 		});
 	});
+
+	$("#consultation-form").validate();
+	$("#consulting form").validate({
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+				required: true,
+				email: true,
+			},
+		},
+		messages: {
+			name: "обязательно",
+			phone: "обязательно",
+			email: {
+				required: "обязательно",
+				email: "Неправильно введен адрес почты",
+			},
+		},
+	});
+	$("#order form").validate();
 });
