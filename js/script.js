@@ -2,19 +2,15 @@ $(document).ready(function () {
 	$(".slider__inner").slick({
 		infinite: false,
 		speed: 300,
-		prevArrow:
-			'<button type="button" class="slick-prev"><img src="icons/left_arrow.svg" alt="left arrow"></button>',
-		nextArrow:
-			'<button type="button" class="slick-next"><img src="icons/right_arrow.svg" alt="left arrow"></button>',
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					dots: true,
-					arrows: false,
-				},
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/left_arrow.svg" alt="left arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/right_arrow.svg" alt="left arrow"></button>',
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				dots: true,
+				arrows: false,
 			},
-		],
+		}, ],
 	});
 });
 
@@ -38,6 +34,7 @@ $(document).ready(function () {
 	$(document).on("click", "div.carousel__nav .dot", function () {
 		$(this).addClass("dot_active").siblings().removeClass("dot_active");
 	});
+
 	function toggleSlide(item) {
 		$(item).each(function (i) {
 			$(this).on("click", function (e) {
@@ -66,24 +63,27 @@ $(document).ready(function () {
 		});
 	});
 
-	$("#consultation-form").validate();
-	$("#consulting form").validate({
-		rules: {
-			name: "required",
-			phone: "required",
-			email: {
-				required: true,
-				email: true,
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true,
+				},
 			},
-		},
-		messages: {
-			name: "обязательно",
-			phone: "обязательно",
-			email: {
-				required: "обязательно",
-				email: "Неправильно введен адрес почты",
+			messages: {
+				name: "обязательно",
+				phone: "обязательно",
+				email: {
+					required: "Введите адрес вашей почты",
+					email: "Неправильно введен адрес почты",
+				},
 			},
-		},
-	});
-	$("#order form").validate();
+		});
+	}
+	validateForms("#consulting form");
+	validateForms("#order form");
+	validateForms("#consultation-form");
 });
