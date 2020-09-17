@@ -2,6 +2,26 @@
 	min-height: 680px;
 	background: url("../img/second_bg.jpg") center center/cover no-repeat;
 	padding: 100px 0 92px 0;
+
+	label.error {
+		top: 0;
+		left: 45%;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: transparent #f2f2f2;
+			border-width: 15px 15px 15px 0;
+			left: -13px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
 	&__descr {
 		font-size: 20px;
 		line-height: 1.2;
@@ -9,7 +29,10 @@
 		color: #ffffff;
 		margin-top: 78px;
 	}
-	.xs-visible {
-		display: none;
-	}
+
+
+}
+
+.xs-visible {
+	display: none;
 }
